@@ -1,8 +1,9 @@
+# def solution(s1, s2):
+#     count = 0
+#     for i in s1:
+#             if i in s2:
+#                 count += 1
+#     return count
+
 def solution(s1, s2):
-    count = 0
-    for i in s1:
-        for j in s2:
-            if i == j:
-                print(s1, s2)
-                count += 1
-    return count
+    return len(set(s1) & set(s2))
